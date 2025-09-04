@@ -124,9 +124,7 @@ def classify_segment(codes:list[str]) -> str:
     hits = [name for name, ok in segment_hits(codes).items() if ok]
     if not hits:
         return "Annet"
-    if len(hits) == 1:
-        return hits[0]
-    return "Blandet"
+    return ", ".join(hits)  # viser alle segmenter som gjelder
 
 def infer_sector(enhet:dict) -> str:
     # Bruk institusjonell sektorkode hvis mulig, ellers orgform-heuristikk
