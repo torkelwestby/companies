@@ -8,7 +8,7 @@ import streamlit as st
 ENHETS_API = "https://data.brreg.no/enhetsregisteret/api/enheter"
 PAGE_SIZE = 200  # fast side-størrelse mot API
 
-st.set_page_config(page_title="Firmify – Selskapsfinner", layout="wide")
+st.set_page_config(page_title="Firmify – Livity", layout="wide")
 st.title("Firmify for Livity 𐂐")
 
 # --- Konfig: NACE-grupper for segmenter ---------------------------------------
