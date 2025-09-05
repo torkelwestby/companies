@@ -64,7 +64,7 @@ with st.sidebar:
     with col1:
         min_ansatte = st.number_input("Min ansatte", min_value=0, value=0, step=1)
     with col2:
-        max_ansatte = st.number_input("Max ansatte", min_value=0, value=999_999, step=1)
+        max_ansatte = st.number_input("Max ansatte", min_value=0, value=999_999, step=10)
 
     # C) Segment (bransjeklynger via NACE)
     st.subheader("Segment (bransjeklynger)")
